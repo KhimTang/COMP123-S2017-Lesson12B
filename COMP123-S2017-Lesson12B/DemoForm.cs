@@ -24,5 +24,27 @@ namespace COMP123_S2017_Lesson12B
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// This is the HelloButton event handler for the click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void HelloButton_Click(object sender, EventArgs e)
+        {
+            if (NameTexBox.Text.Length > 0)
+            {
+                HelloLable.Text = "Hello, " + NameTexBox.Text;
+            }
+            else
+            {
+                HelloLable.Text = "Hello, World!";
+            }
+            
+        }
+
+        private void HelloLable_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
